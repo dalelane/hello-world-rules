@@ -8,7 +8,7 @@
     <value><![CDATA[""]]></value>
   </tags>
   <tags key="operationName">
-    <value><![CDATA["Compute loyalty schema rewards"]]></value>
+    <value><![CDATA["rewards"]]></value>
   </tags>
   <tags key="exposedAtRuntime">
     <value><![CDATA[true]]></value>
