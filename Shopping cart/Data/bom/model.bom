@@ -1,0 +1,130 @@
+
+package com.ibm.ads.samples.retail.shopping_cart.data;
+
+
+class Customer
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Customer"
+        #de.generated
+{
+    string name
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "name"
+                #update;
+    com.ibm.ads.samples.retail.shopping_cart.data.Status status
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "status"
+                #update;
+    Customer(string name, com.ibm.ads.samples.retail.shopping_cart.data.Status status)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Customer()
+                #dataio.default;
+}
+
+class Item
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Item"
+        #de.generated
+{
+    string name
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "name"
+                #update;
+    double price
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "price"
+                #update;
+    Item(string name, double price)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Item()
+                #dataio.default;
+}
+
+class Result
+        property ads.typeId "6"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Result"
+        #de.generated
+{
+    double givenDiscount
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "givenDiscount"
+                #update;
+    double loyaltyPoints
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "loyaltyPoints"
+                #update;
+    double price
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "price"
+                #update;
+    Result(double givenDiscount, double loyaltyPoints, double price)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Result()
+                #dataio.default;
+}
+
+class ShoppingCart
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "ShoppingCart"
+        #de.generated
+{
+    java.util.List items domain 0,* class com.ibm.ads.samples.retail.shopping_cart.data.Item
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "items"
+                #update;
+    double price
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "price"
+                #update;
+    ShoppingCart(java.util.List items domain 0,* class com.ibm.ads.samples.retail.shopping_cart.data.Item, 
+        double price)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    ShoppingCart()
+                #dataio.default;
+    void addTo_items(com.ibm.ads.samples.retail.shopping_cart.data.Item items)
+                property collectionAttribute "items"
+                #update;
+    void clear_items()
+                property collectionAttribute "items"
+                #update;
+    void removeFrom_items(com.ibm.ads.samples.retail.shopping_cart.data.Item items)
+                property collectionAttribute "items"
+                #update;
+    void set_items(java.util.Collection items domain 0,* class com.ibm.ads.samples.retail.shopping_cart.data.Item)
+                property collectionAttribute "items"
+                #update;
+}
+
+class Status
+        extends java.lang.Enum
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Status"
+        #de.generated
+{
+    domain {static Bronze, static Gold, static Platinum, static Silver}
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Bronze
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Bronze";
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Gold
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Gold";
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Platinum
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Platinum";
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Silver
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Silver";
+}
+
