@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>b313be12-a227-4868-86e8-92f5d0b71735</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Input">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase" collection="false" name="Input"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Input" typeRef="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase"/>
+    </inputData>
+    <decision id="node_1" name="Total spend">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase" collection="false" name="Input"/>
+                <output bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart" collection="false" name="Total spend"/>
+                <rule defaultRule="false" href="node_1/Compute%20total%20spend.drl" kind="BusinessRule" name="Compute total spend"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Total spend" typeRef="delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_2" name="Calculate rewards">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
+                <input bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart" collection="false" name="Total spend"/>
+                <input bomType="java.lang.Double" collection="false" name="Loyalty points ratio"/>
+                <output bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards" collection="false" name="Calculate rewards"/>
+                <rule defaultRule="false" href="node_2/Compute%20loyalty%20points%20.drl" kind="BusinessRule" name="Compute loyalty points "/>
+                <rule defaultRule="true" href="node_2/default.drl" kind="BusinessRule" name="default"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Calculate rewards" typeRef="delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_3" name="Customer">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer" collection="false" name="Customer"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="Customer" typeRef="delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer"/>
+    </inputData>
+    <decision id="node_4" name="Loyalty points ratio">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer" collection="false" name="Customer"/>
+                <output bomType="java.lang.Double" collection="false" name="Loyalty points ratio"/>
+                <rule defaultRule="false" href="node_4/Select%20loyalty%20ratio.dmt" kind="DecisionTable" name="Select loyalty ratio"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Loyalty points ratio" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

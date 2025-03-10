@@ -1,0 +1,10 @@
+{
+  "description" : "",
+  "groupId" : "delane456.hello_world.loosehanger_loyalty",
+  "locale" : "en_US",
+  "properties" : {
+    "refactoringEnabled" : false,
+    "tags" : [ ]
+  },
+  "extraProperties" : { }
+}

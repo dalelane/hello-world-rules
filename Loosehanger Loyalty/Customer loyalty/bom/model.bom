@@ -1,0 +1,106 @@
+
+package delane456.hello_world.loosehanger_loyalty.customerloyalty;
+
+
+class Customer
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Customer"
+        #de.generated
+{
+    string name
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "name"
+                #update;
+    delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier tier
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "tier"
+                #update;
+    Customer(string name, delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier tier)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Customer()
+                #dataio.default;
+}
+
+class LoyaltyTier
+        extends java.lang.Enum
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "LoyaltyTier"
+        #de.generated
+{
+    domain {static BRONZE, static GOLD, static PLATINUM}
+    static final readonly delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier BRONZE
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "BRONZE";
+    static final readonly delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier GOLD
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "GOLD";
+    static final readonly delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier PLATINUM
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "PLATINUM";
+}
+
+class Purchase
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Purchase"
+        #de.generated
+{
+    string productDescription
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "productDescription"
+                #update;
+    double quantity
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "quantity"
+                #update;
+    double unitPrice
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "unitPrice"
+                #update;
+    Purchase(string productDescription, double quantity, double unitPrice)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Purchase()
+                #dataio.default;
+}
+
+class Rewards
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Rewards"
+        #de.generated
+{
+    double loyaltyPoints
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "loyaltyPoints"
+                #update;
+    Rewards(double loyaltyPoints)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Rewards()
+                #dataio.default;
+}
+
+class ShoppingCart
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "ShoppingCart"
+        #de.generated
+{
+    double totalSpend
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "totalSpend"
+                #update;
+    ShoppingCart(double totalSpend)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    ShoppingCart()
+                #dataio.default;
+}
+

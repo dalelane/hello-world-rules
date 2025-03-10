@@ -1,0 +1,45 @@
+
+# delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer#concept.label = Customer
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer.Customer(java.lang.String,delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier)#phrase.navigation = a new {Customer} where {0, name} {1, tier}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer.name#phrase.action = set the name of {this} to {name}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer.name#phrase.navigation = {name} of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer.tier#phrase.action = set the tier of {this} to {tier}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer.tier#phrase.clearer = clear the tier of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Customer.tier#phrase.navigation = {tier} of {this}
+
+# delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier
+delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier#concept.label = Loyalty tier
+delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier.BRONZE#instance.label = BRONZE
+delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier.GOLD#instance.label = GOLD
+delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier.PLATINUM#instance.label = PLATINUM
+
+# delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase#concept.label = Purchase
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.Purchase(java.lang.String,double,double)#phrase.navigation = a new {Purchase} where {0, product description} {1, quantity} {2, unit price}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.productDescription#phrase.action = set the product description of {this} to {product description}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.productDescription#phrase.navigation = {product description} of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.quantity#phrase.action = set the quantity of {this} to {quantity}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.quantity#phrase.addition_setter = add {quantity} to the quantity of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.quantity#phrase.navigation = {quantity} of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.quantity#phrase.subtraction_setter = subtract {quantity} from the quantity of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.unitPrice#phrase.action = set the unit price of {this} to {unit price}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.unitPrice#phrase.addition_setter = add {unit price} to the unit price of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.unitPrice#phrase.navigation = {unit price} of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.unitPrice#phrase.subtraction_setter = subtract {unit price} from the unit price of {this}
+
+# delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards#concept.label = Rewards
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards.Rewards(double)#phrase.navigation = a new {Rewards} where {0, loyalty points}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards.loyaltyPoints#phrase.action = set the loyalty points of {this} to {loyalty points}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards.loyaltyPoints#phrase.addition_setter = add {loyalty points} to the loyalty points of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards.loyaltyPoints#phrase.navigation = {loyalty points} of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Rewards.loyaltyPoints#phrase.subtraction_setter = subtract {loyalty points} from the loyalty points of {this}
+
+# delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart
+delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart#concept.label = Shopping cart
+delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart.ShoppingCart(double)#phrase.navigation = a new {Shopping cart} where {0, total spend}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart.totalSpend#phrase.action = set the total spend of {this} to {total spend}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart.totalSpend#phrase.addition_setter = add {total spend} to the total spend of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart.totalSpend#phrase.navigation = {total spend} of {this}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart.totalSpend#phrase.subtraction_setter = subtract {total spend} from the total spend of {this}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Compute loyalty points </name>
+  <uuid>0442b35b-5bb0-45e8-857a-60dfab66636c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the total spend of 'Total spend' is at least 4.99 
+then
+	set decision to a new Rewards where
+		the loyalty points is round ( the total spend * 'Loyalty points ratio' , 0 ) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
