@@ -7,18 +7,18 @@
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
-    <inputData id="node_0" name="Input">
+    <inputData id="node_0" name="Purchase">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase" collection="false" name="Input"/>
+                <output bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase" collection="false" name="Purchase"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="Input" typeRef="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase"/>
+        <variable id="node_0_ii" name="Purchase" typeRef="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase"/>
     </inputData>
     <decision id="node_1" name="Total spend">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase" collection="false" name="Input"/>
+                <input bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase" collection="false" name="Purchase"/>
                 <output bomType="delane456.hello_world.loosehanger_loyalty.customerloyalty.ShoppingCart" collection="false" name="Total spend"/>
                 <rule defaultRule="false" href="node_1/Compute%20total%20spend.drl" kind="BusinessRule" name="Compute total spend"/>
             </ruleset>
