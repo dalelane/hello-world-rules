@@ -29,7 +29,7 @@
             <Partition DefId="C0">
                 <Condition>
                     <Expression>
-                        <Param><![CDATA[Bronze]]></Param>
+                        <Param><![CDATA[BRONZE]]></Param>
                     </Expression>
                     <ActionSet>
                         <Action DefId="A0">
@@ -41,7 +41,7 @@
                 </Condition>
                 <Condition>
                     <Expression>
-                        <Param><![CDATA[Silver]]></Param>
+                        <Param><![CDATA[SILVER]]></Param>
                     </Expression>
                     <ActionSet>
                         <Action DefId="A0">
@@ -53,7 +53,7 @@
                 </Condition>
                 <Condition>
                     <Expression>
-                        <Param><![CDATA[Gold]]></Param>
+                        <Param><![CDATA[GOLD]]></Param>
                     </Expression>
                     <ActionSet>
                         <Action DefId="A0">
@@ -65,7 +65,7 @@
                 </Condition>
                 <Condition>
                     <Expression>
-                        <Param><![CDATA[Platinum]]></Param>
+                        <Param><![CDATA[PLATINUM]]></Param>
                     </Expression>
                     <ActionSet>
                         <Action DefId="A0">
@@ -80,9 +80,9 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Loyalty factor]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[200]]></Data>
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[Status]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[200]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Loyalty factor]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[128]]></Data>
         </ResourceSet>
     </Resources>

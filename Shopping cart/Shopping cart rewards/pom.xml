@@ -30,7 +30,7 @@
                 
     
     
-    <artifactId>discount</artifactId>
+    <artifactId>shoppingCartRewards</artifactId>
                 
     
     
@@ -98,7 +98,7 @@
                                                                                                                 
                             
                             
-                            <name>discount</name>
+                            <name>Shopping_cart_rewards</name>
                                                                                                             
                         
                         
@@ -110,7 +110,7 @@
                                                                             
                     
                     
-                    <packageName>com.ibm.ads.samples.retail.shopping_cart.discount</packageName>
+                    <packageName>com.ibm.ads.samples.retail.shopping_cart.shopping_cart_price_and_reward</packageName>
                                                                             
                 
                 
@@ -134,6 +134,11 @@
         <dependency>
             <groupId>delane456.hello_world.shopping_cart</groupId>
             <artifactId>data</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>delane456.hello_world.shopping_cart</groupId>
+            <artifactId>loyaltyPoints</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>

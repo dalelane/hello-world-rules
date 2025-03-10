@@ -21,19 +21,11 @@ com.ibm.ads.samples.retail.shopping_cart.data.Item.price#phrase.subtraction_sett
 
 # com.ibm.ads.samples.retail.shopping_cart.data.Result
 com.ibm.ads.samples.retail.shopping_cart.data.Result#concept.label = Result
-com.ibm.ads.samples.retail.shopping_cart.data.Result.Result(double,double,double)#phrase.navigation = a new {Result} where {0, given discount} {1, loyalty points} {2, price}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.givenDiscount#phrase.action = set the given discount of {this} to {given discount}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.givenDiscount#phrase.addition_setter = add {given discount} to the given discount of {this}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.givenDiscount#phrase.navigation = {given discount} of {this}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.givenDiscount#phrase.subtraction_setter = subtract {given discount} from the given discount of {this}
+com.ibm.ads.samples.retail.shopping_cart.data.Result.Result(double)#phrase.navigation = a new {Result} where {0, loyalty points}
 com.ibm.ads.samples.retail.shopping_cart.data.Result.loyaltyPoints#phrase.action = set the loyalty points of {this} to {loyalty points}
 com.ibm.ads.samples.retail.shopping_cart.data.Result.loyaltyPoints#phrase.addition_setter = add {loyalty points} to the loyalty points of {this}
 com.ibm.ads.samples.retail.shopping_cart.data.Result.loyaltyPoints#phrase.navigation = {loyalty points} of {this}
 com.ibm.ads.samples.retail.shopping_cart.data.Result.loyaltyPoints#phrase.subtraction_setter = subtract {loyalty points} from the loyalty points of {this}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.price#phrase.action = set the price of {this} to {price}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.price#phrase.addition_setter = add {price} to the price of {this}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.price#phrase.navigation = {price} of {this}
-com.ibm.ads.samples.retail.shopping_cart.data.Result.price#phrase.subtraction_setter = subtract {price} from the price of {this}
 
 # com.ibm.ads.samples.retail.shopping_cart.data.ShoppingCart
 com.ibm.ads.samples.retail.shopping_cart.data.ShoppingCart#concept.label = Shopping cart
@@ -50,7 +42,7 @@ com.ibm.ads.samples.retail.shopping_cart.data.ShoppingCart.removeFrom_items(com.
 
 # com.ibm.ads.samples.retail.shopping_cart.data.Status
 com.ibm.ads.samples.retail.shopping_cart.data.Status#concept.label = Status
-com.ibm.ads.samples.retail.shopping_cart.data.Status.Bronze#instance.label = Bronze
-com.ibm.ads.samples.retail.shopping_cart.data.Status.Gold#instance.label = Gold
-com.ibm.ads.samples.retail.shopping_cart.data.Status.Platinum#instance.label = Platinum
-com.ibm.ads.samples.retail.shopping_cart.data.Status.Silver#instance.label = Silver
+com.ibm.ads.samples.retail.shopping_cart.data.Status.BRONZE#instance.label = BRONZE
+com.ibm.ads.samples.retail.shopping_cart.data.Status.GOLD#instance.label = GOLD
+com.ibm.ads.samples.retail.shopping_cart.data.Status.PLATINUM#instance.label = PLATINUM
+com.ibm.ads.samples.retail.shopping_cart.data.Status.SILVER#instance.label = SILVER

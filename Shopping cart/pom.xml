@@ -16,7 +16,7 @@
     
     <version>1.0.0-SNAPSHOT</version>
     <name>Shopping cart</name>
-    <description>Determine the personalized price of a shopping cart and compute loyalty points associated with the transaction</description>
+    <description>Compute loyalty points associated with a shopping cart</description>
                 
     
     
@@ -186,9 +186,8 @@
     <modules>
         <module>.decisionservice</module>
         <module>Data</module>
-        <module>Discount</module>
         <module>Loyalty points</module>
-        <module>Shopping cart price and reward</module>
+        <module>Shopping cart rewards</module>
     </modules>
                 
     

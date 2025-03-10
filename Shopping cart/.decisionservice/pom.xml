@@ -60,17 +60,12 @@
         </dependency>
         <dependency>
             <groupId>delane456.hello_world.shopping_cart</groupId>
-            <artifactId>discount</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>delane456.hello_world.shopping_cart</groupId>
             <artifactId>loyaltyPoints</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>delane456.hello_world.shopping_cart</groupId>
-            <artifactId>shoppingCartPriceAndReward</artifactId>
+            <artifactId>shoppingCartRewards</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -369,6 +364,12 @@
 
 
 
+
+
+
+
+
+
 <build>
         <resources>
             <resource>
@@ -404,15 +405,6 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>delane456.hello_world.shopping_cart</groupId>
-                                    <artifactId>discount</artifactId>
-                                    <version>LATEST-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <includes>**/*.class</includes>
-                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>delane456.hello_world.shopping_cart</groupId>
                                     <artifactId>loyaltyPoints</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
@@ -422,7 +414,7 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>delane456.hello_world.shopping_cart</groupId>
-                                    <artifactId>shoppingCartPriceAndReward</artifactId>
+                                    <artifactId>shoppingCartRewards</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

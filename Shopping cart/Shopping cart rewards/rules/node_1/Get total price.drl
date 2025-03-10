@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Get total price</name>
+  <uuid>bc81c013-598b-4a71-9e68-288126b180b6</uuid>
+  <documentation><![CDATA[Get the total basket price]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[define 'price' as the sum of the prices of the items ;
+
+print "Total price is " + price ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

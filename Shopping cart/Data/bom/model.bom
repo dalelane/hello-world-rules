@@ -51,19 +51,11 @@ class Result
         property com.fasterxml.jackson.annotation.JsonTypeName "Result"
         #de.generated
 {
-    double givenDiscount
-                property ads.attributeId "3"
-                property com.fasterxml.jackson.annotation.JsonProperty "givenDiscount"
-                #update;
     double loyaltyPoints
                 property ads.attributeId "2"
                 property com.fasterxml.jackson.annotation.JsonProperty "loyaltyPoints"
                 #update;
-    double price
-                property ads.attributeId "1"
-                property com.fasterxml.jackson.annotation.JsonProperty "price"
-                #update;
-    Result(double givenDiscount, double loyaltyPoints, double price)
+    Result(double loyaltyPoints)
                 #autoExpand
                 #beanConstructor
                 property groups "BALA"
@@ -113,18 +105,18 @@ class Status
         property com.fasterxml.jackson.annotation.JsonTypeName "Status"
         #de.generated
 {
-    domain {static Bronze, static Gold, static Platinum, static Silver}
-    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Bronze
+    domain {static BRONZE, static GOLD, static PLATINUM, static SILVER}
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status BRONZE
                 property ads.attributeId "1"
-                property com.fasterxml.jackson.annotation.JsonProperty "Bronze";
-    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Gold
+                property com.fasterxml.jackson.annotation.JsonProperty "BRONZE";
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status GOLD
                 property ads.attributeId "3"
-                property com.fasterxml.jackson.annotation.JsonProperty "Gold";
-    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Platinum
+                property com.fasterxml.jackson.annotation.JsonProperty "GOLD";
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status PLATINUM
                 property ads.attributeId "4"
-                property com.fasterxml.jackson.annotation.JsonProperty "Platinum";
-    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status Silver
+                property com.fasterxml.jackson.annotation.JsonProperty "PLATINUM";
+    static final readonly com.ibm.ads.samples.retail.shopping_cart.data.Status SILVER
                 property ads.attributeId "2"
-                property com.fasterxml.jackson.annotation.JsonProperty "Silver";
+                property com.fasterxml.jackson.annotation.JsonProperty "SILVER";
 }
 

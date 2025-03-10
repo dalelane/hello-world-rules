@@ -1,5 +1,5 @@
 {
-  "description" : "Determine the personalized price of a shopping cart and compute loyalty points associated with the transaction",
+  "description" : "Compute loyalty points associated with a shopping cart",
   "groupId" : "delane456.hello_world.shopping_cart",
   "locale" : "en_US",
   "properties" : {
