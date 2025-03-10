@@ -18,7 +18,7 @@
         </dependency>
         <dependency>
             <groupId>delane456.hello_world.loosehanger_loyalty</groupId>
-            <artifactId>shoppingCartRewards</artifactId>
+            <artifactId>rewards</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -81,6 +81,8 @@
 
 
 
+
+
 <build>
         <resources>
             <resource>
@@ -116,7 +118,7 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>delane456.hello_world.loosehanger_loyalty</groupId>
-                                    <artifactId>shoppingCartRewards</artifactId>
+                                    <artifactId>rewards</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

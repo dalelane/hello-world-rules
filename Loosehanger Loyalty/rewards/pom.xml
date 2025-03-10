@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>delane456.hello_world.loosehanger_loyalty</groupId>
-    <artifactId>shoppingCartRewards</artifactId>
+    <artifactId>rewards</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,7 +26,7 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>Shopping_cart_rewards</name>
+                            <name>rewards</name>
                         </deployment>
                     </deployments>
                 <packageName>delane456.hello_world.loosehanger_loyalty.shoppingcartrewards</packageName>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="delane456.hello_world.loosehanger_loyalty:shoppingCartRewards" ruleAppVersion="LATEST-SNAPSHOT" packageName="delane456.hello_world.loosehanger_loyalty.shoppingcartrewards" managingXom="true">
-  <name>Shopping_cart_rewards</name>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="delane456.hello_world.loosehanger_loyalty:rewards" ruleAppVersion="LATEST-SNAPSHOT" packageName="delane456.hello_world.loosehanger_loyalty.shoppingcartrewards" managingXom="true">
+  <name>rewards</name>
   <uuid>5384ab22-f868-4873-9980-3f9b08dc5718</uuid>
   <locales>en_US</locales>
   <operations operationName="operation">

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Shopping cart rewards">
-  <name>Shopping_cart_rewards</name>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="rewards">
+  <name>rewards</name>
   <uuid>b51905a5-bb73-4da0-8425-7757593a109d</uuid>
   <decisionModel href="../rules/decisionModel.dmo#b313be12-a227-4868-86e8-92f5d0b71735"/>
-  <targetRuleProject href="../../Shopping%20cart%20rewards#9eb3e3b6-63ba-40cc-a937-a9c18fe96db0"/>
+  <targetRuleProject href="../../rewards#9eb3e3b6-63ba-40cc-a937-a9c18fe96db0"/>
   <tags key="operationDescription">
     <value><![CDATA[""]]></value>
   </tags>

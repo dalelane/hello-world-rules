@@ -65,7 +65,7 @@
     <modules>
         <module>.decisionservice</module>
         <module>Customer loyalty</module>
-        <module>Shopping cart rewards</module>
+        <module>rewards</module>
     </modules>
 
     <build>
