@@ -4,4 +4,13 @@
   <uuid>b51905a5-bb73-4da0-8425-7757593a109d</uuid>
   <decisionModel href="../rules/decisionModel.dmo#b313be12-a227-4868-86e8-92f5d0b71735"/>
   <targetRuleProject href="../../Shopping%20cart%20rewards#9eb3e3b6-63ba-40cc-a937-a9c18fe96db0"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Compute loyalty schema rewards"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
