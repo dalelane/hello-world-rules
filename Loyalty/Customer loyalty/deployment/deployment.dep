@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="delane456.hello_world.loosehanger_loyalty:customerLoyalty" ruleAppVersion="LATEST-SNAPSHOT" packageName="delane456.hello_world.loosehanger_loyalty.customerloyalty" managingXom="true">
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="dalelane-loosehanger:customerLoyalty" ruleAppVersion="LATEST-SNAPSHOT" packageName="delane456.hello_world.loosehanger_loyalty.customerloyalty" managingXom="true">
   <name>Customer_loyalty</name>
   <uuid>9d8bcf04-7887-4baa-bc1f-f2c0cfaa7fbc</uuid>
   <locales>en_US</locales>
