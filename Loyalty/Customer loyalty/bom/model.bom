@@ -51,7 +51,7 @@ class Purchase
                 property ads.attributeId "5"
                 property com.fasterxml.jackson.annotation.JsonProperty "productDescription"
                 #update;
-    double quantity
+    long quantity
                 property ads.attributeId "4"
                 property com.fasterxml.jackson.annotation.JsonProperty "quantity"
                 #update;
@@ -59,7 +59,7 @@ class Purchase
                 property ads.attributeId "2"
                 property com.fasterxml.jackson.annotation.JsonProperty "unitPrice"
                 #update;
-    Purchase(string productDescription, double quantity, double unitPrice)
+    Purchase(string productDescription, long quantity, double unitPrice)
                 #autoExpand
                 #beanConstructor
                 property groups "BALA"

@@ -3,12 +3,12 @@
 
     <parent>
         <groupId>delane456.hello_world.loosehanger_loyalty</groupId>
-        <artifactId>loosehangerLoyalty</artifactId>
+        <artifactId>loyalty</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <groupId>delane456.hello_world.loosehanger_loyalty</groupId>
-    <artifactId>customerLoyalty</artifactId>
+    <artifactId>rewards</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,16 +26,21 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>Customer_loyalty</name>
+                            <name>rewards</name>
                         </deployment>
                     </deployments>
-                <packageName>delane456.hello_world.loosehanger_loyalty.customerloyalty</packageName>
+                <packageName>delane456.hello_world.loosehanger_loyalty.shoppingcartrewards</packageName>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
 <dependencies>
+        <dependency>
+            <groupId>delane456.hello_world.loosehanger_loyalty</groupId>
+            <artifactId>customerLoyalty</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>

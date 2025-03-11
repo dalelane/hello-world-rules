@@ -16,7 +16,7 @@ delane456.hello_world.loosehanger_loyalty.customerloyalty.LoyaltyTier.PLATINUM#i
 
 # delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase
 delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase#concept.label = Purchase
-delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.Purchase(java.lang.String,double,double)#phrase.navigation = a new {Purchase} where {0, product description} {1, quantity} {2, unit price}
+delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.Purchase(java.lang.String,long,double)#phrase.navigation = a new {Purchase} where {0, product description} {1, quantity} {2, unit price}
 delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.productDescription#phrase.action = set the product description of {this} to {product description}
 delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.productDescription#phrase.navigation = {product description} of {this}
 delane456.hello_world.loosehanger_loyalty.customerloyalty.Purchase.quantity#phrase.action = set the quantity of {this} to {quantity}
